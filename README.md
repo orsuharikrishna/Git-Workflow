@@ -1,1 +1,3 @@
-# git-work
+## git-work
+
+    Details on Git Implementation.
