@@ -15,7 +15,7 @@ These branches have an infinite lifetime
     
     2. develop branch
     
-        *This branch alwasy points to latest development code.
+        *This branch always points to latest development code.
         *It's equivalent to alpha state in release process.
         
 ### Supporting branch
@@ -32,7 +32,7 @@ These branches have limited life-time with specific purpose and it will be remov
         
     2. bug branch
     
-        *This branch is used to fix the bug in existing system.
+        *This branch is used to fix the bugs in existing system.
         *This branch should branch off from: *develop*.
         *This branch should merge back into: *develop*.
         

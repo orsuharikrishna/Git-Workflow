@@ -1,4 +1,6 @@
-## Useful Git Commands
+### Useful Git Commands
+
+1. [git init](#init)
 
     1. git branch -vv // list out your local branches with more information including what each branch is tracking and if your local branch is ahead, behind or both.
 
@@ -11,3 +13,15 @@
     5. $ git merge --abort // To roll back all merge operation.
 
     6. $ git pull origin feature/F100-login-signup // To update the feature branch. 
+
+
+## init
+
+```sh
+git init
+```
+
+*It creates an empty Git repository or reinitialize an existing one
+*It is safe to run this command on existing directory
+
+
