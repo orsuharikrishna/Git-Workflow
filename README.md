@@ -1,7 +1,11 @@
-## Git
+## Git-Work
 
-This project helps user to basic introduction to Git Usage and Git workflow model. Please follow the links below:
+The intention of this project is to provide basic details about Git Usage and Git workflow model implementation. 
+
+Please follow the links below:
 
 1. [Installation](https://github.com/SarvM/git-work/blob/master/documentation/git-installation-windows.md)
-2. [Setup Environment](https://github.com/SarvM/git-work/blob/master/documentation/setup-git-environment.md)
-3. [Naming Conventions](https://github.com/SarvM/git-work/blob/master/documentation/naming-convention.md)
+2. [Setup Environment](https://github.com/SarvM/git-work/blob/master/documentation/git-setup-environment.md)
+3. [Naming Conventions](https://github.com/SarvM/git-work/blob/master/documentation/git-naming-convention.md)
+4. [Branching Model/Workflow explained](https://github.com/SarvM/git-work/blob/master/documentation/git-branching-model.md)
+5. [Useful commands](https://github.com/SarvM/git-work/blob/master/documentation/git-useful-commands.md)

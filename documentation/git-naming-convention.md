@@ -23,6 +23,7 @@
     hotfix/ms1023-xss-patch
     hotfix/bz2131-login-sqlchange
     release/v1.0.12
+    bug/bz29823
 
 ```
 
