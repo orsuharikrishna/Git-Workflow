@@ -13,7 +13,7 @@
 * Use *slash* to mention supporting branch type.
 * Pattern to follow: 
     < supporting-branch-type > / < reference-id > - < short-description >
-
+    For examples - 
 
 ```shell
 
