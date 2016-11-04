@@ -6,14 +6,15 @@
 * Use dashes to separate words.
 * Use lower case.
 * Do not use bare numbers as leading parts. Example: BUG198483
-* Avoid long descriptive names for long-lived branches.
+* Avoid long descriptive names.
 
 ### Branch Name Guidelines
 
 * Use *slash* to mention supporting branch type.
 * Pattern to follow: 
     < supporting-branch-type > / < reference-id > - < short-description >
-    For examples - 
+    
+    For examples:
 
 ```shell
 
