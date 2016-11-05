@@ -9,7 +9,8 @@ Below commands may be used to achieve the branching model explained in previous 
 
 1. Below freelancers are working for an experimental project called 'pratice-git'
 
-    * Developers: Lisa, Sophie and Rachel
+    * Developers: Lisa and Rachel
+    * Developer Lead: Sophie
     * Admin: Erika 
 
 2. Below task is assigned to each of them:
@@ -187,6 +188,36 @@ $ git checkout feature/signup-api // switch to feature branch
 $ git merge --no-ff develop // all changes available in local develop branch is merged with future branch
 
 ```
+
+Now, Lisa has done with the work. Hence, she will follow the same process:
+
+1. Push the code for review
+2. Code review from developer lead
+3. Pull the latest changes
+4. Merge with local develop branch
+5. Push the changes to remote develop branch
+6. Delete feature branch from local and remote
+
+```sh
+
+$ git status // To know the status of tracked files
+
+$ git add . // Stage the modified files.
+
+$ git commit -m "Feature enhanced and reviewed by developer lead"
+
+$ git checkout develop
+
+$ git merge --no-ff feature/signup-api
+
+$ git push origin develop // push the changes to remote develop branch
+
+$ git branch -d feature/signup-api  // delete the local branch
+
+$ git push origin --delete feature/signup-api  // delete the remote branch 
+
+```
+
 
 
     
