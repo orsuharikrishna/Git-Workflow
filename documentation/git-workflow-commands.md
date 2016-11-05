@@ -106,7 +106,87 @@ Now, the branch is available in both local and remote for tracking.
 
     * The developer should update local develop branch with remote branch.
     * The feature branch should be pushed periodically to remote -- it acts like a backup.
+    
+Back to story. While lisa enhancing the feature, Rachel has fixed the login page issue. Hence, Sophie has to review it and merge it to develop so that it will be available for Lisa.
 
+
+#### Clone and create branch for review
+
+* Sophie need to copy the repository. This step is not required if the repository is already setup.
+* The repository should be updated with latest changes
+
+```sh
+
+$ git clone http://immidart-git.azurewebsites.net/pratice-git.git
+
+$ cd pratice-git/
+
+$ git checkout -b  bug/bz2948 origin/bug/bz2948
+
+```
+
+The branch bug/bz2948 should have all changes committed by Rachel. 
+
+Sophie modified few lines of code and committed to the same branch for Rachel to take it further. 
+
+```sh
+
+$ git status // To identify the files modified by her
+
+$ git add . // To add the files for stracking
+
+$ git commit -m "Code Reviewed. Modified few lines" 
+
+$ git push origin bug/bz2948
+
+```
+
+#### Pull the latest code and Merge the files if required.
+
+Now, Rachel need to pull the latest code and do merge if required and push it to develop. 
+
+```sh
+
+$ git pull // To pull the latest code 
+
+$ git log --oneline -5 // To understand the commit 
+
+```
+
+Time to merge the changes with develop branch. 
+
+```sh
+
+$ git checkout develop // This is local branch
+
+$ git merge --no-ff bug/bz2948 // Merge the changes to local develop branch
+
+$ git push origin develop // All changes are pushed to develop branch
+
+$ git branch -d bug/bz2948 // To delete the local branch
+
+$ git push origin --delete bug/bz2948 // To delete the remote branch from server
+
+```
+
+* Best Practices:
+
+    * It is recommended to use the option * --no-ff * while merging. 
+    * Delete the feature/hotfix/bug/release branch once it is merged with corresponding main branches.
+    
+Well, Now Lisa need to update the branch to have the changes done by Rachel. 
+
+```sh
+
+$ git checkout develop // switch from feature branch to develop branch to pull latest changes
+
+$ git pull origin develop // All latest changes available in develop branch is pulled from server to local
+
+$ git checkout feature/signup-api // switch to feature branch
+
+$ git merge --no-ff develop // all changes available in local develop branch is merged with future branch
+
+```
 
 
     

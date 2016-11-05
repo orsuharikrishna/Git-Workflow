@@ -29,4 +29,23 @@
 6. git clone *[url]*
 
     * If you need to collaborate with someone on a project, or if you want to get a copy of a project so you can look at or use the code, you will clone it. You simply run the git clone [url] command with the URL of the project you want to copy.
+    
+7. git log --oneline -2
+
+    * This command is used to display the commits
+    * The output can be altered by using sub commands. *--oneline* is used to display the output in single line. 
+    * sub command *-2* is used to display last 2 commits.
+    
+8. logout
+
+    * This command is used to exit the bash command line. 
+    
+9. git branch -d {the_local_branch}
+
+    * To remove local branch from your machine.
+    * Use -D instead to force deletion without checking merged status
+    
+10. git push origin --delete {the_remote_branch}
+
+    * To remove remote branch from your server.
 
