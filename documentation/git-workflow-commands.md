@@ -1,4 +1,4 @@
-## Git commands - Workflow
+## Git commands - Workflow                          [Go To Readme](https://github.com/SarvM/git-work)
 
 Below commands may be used to achieve the branching model explained in previous topic.
 
@@ -25,7 +25,7 @@ Please refer [git useful commands](https://github.com/SarvM/git-work/blob/master
 
 #### Initialize the project
 
-This command is used by admin to initialize the project in server and setup *develop* branch. 
+This command is used by admin to initialize the project in server and to setup *develop* branch. 
 
 Note: This section is not required for developers.
 

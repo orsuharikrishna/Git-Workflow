@@ -1,4 +1,4 @@
-## Setup Git Environment
+## Setup Git Environment                          [Go To Readme](https://github.com/SarvM/git-work)
 
 This setup is required only once on a give computer; they’ll stick around between upgrades. You can also change them at any time by running through the commands again.
 
