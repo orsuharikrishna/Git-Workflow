@@ -21,4 +21,12 @@
 
     * This command is used to push develop branch to remote *origin* for remote tracking. 
     
+5. git status --short
+
+    * This command is used to output the working status of the tree. 
+    * --short is used to output the result in short format.
+
+6. git clone *[url]*
+
+    * If you need to collaborate with someone on a project, or if you want to get a copy of a project so you can look at or use the code, you will clone it. You simply run the git clone [url] command with the URL of the project you want to copy.
 
