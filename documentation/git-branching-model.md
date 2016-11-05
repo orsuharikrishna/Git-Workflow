@@ -1,4 +1,7 @@
-## Git branching model                          [Go To Readme](https://github.com/SarvM/git-work)
+#### [Click here to readme](https://github.com/SarvM/git-work)
+
+
+## Git branching model                       
 
 There are many ways to implement workflow in Git. We are going to discuss about the variant of [nvie's git branching workflow](http://nvie.com/posts/a-successful-git-branching-model/).
 

@@ -1,4 +1,7 @@
-### Useful Git Commands                          [Go To Readme](https://github.com/SarvM/git-work)
+#### [Click here to readme](https://github.com/SarvM/git-work)
+
+
+### Useful Git Commands 
 
 1. git init
 
