@@ -1,4 +1,7 @@
-## Git commands - Workflow                          [Go To Readme](https://github.com/SarvM/git-work)
+<h4>[Go To Readme](https://github.com/SarvM/git-work)</h4>
+
+
+## Git commands - Workflow                          
 
 Below commands may be used to achieve the branching model explained in previous topic.
 
