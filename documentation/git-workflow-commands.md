@@ -21,8 +21,24 @@ Below commands may be used to achieve the branching model explained in previous 
 
 ### Git commands
 
-#### Initialize the project and connect to remote repository
+Please refer [git useful commands](https://github.com/SarvM/git-work/blob/master/documentation/git-useful-commands.md) for more details on below commands.
 
+#### Initialize the project
 
-    
+This command is used by admin to initialize the project in server and setup *develop* branch. 
+
+Note: This section is not required for developers.
+
+```sh
+
+$ git init 
+
+$ git commit --allow-empty -m "Initial commit"
+
+$ git checkout -b develop master
+
+$ git push origin develop
+
+```
+
     
