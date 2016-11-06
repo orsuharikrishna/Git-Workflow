@@ -273,6 +273,10 @@ $ git push origin --delete release/v1.0.12  // delete the remote release branch
 
 ```
 
+Graphical representation of git commits -- used gitk to produce this image.
+
+![gitk - releasev1.0.12](/documentation/img/gitk-release-v1.0.12.png?raw=true "gitk - releasev1.0.12")
+
 Done. Enjoy Git :) 
 
 
