@@ -218,6 +218,64 @@ $ git push origin --delete feature/signup-api  // delete the remote branch
 
 ```
 
+#### Create Release
+
+Now, Sophie is going  to create Release branch with all the bug fixes and enhancement for QA / Integration testing. 
+
+```sh
+
+$ git checkout -b develop origin/develop // incase the *develop* branch is not available in release admin system
+
+$ git pull origin develop // just to make sure the *develop* branch is having latest code available.
+
+$ git checkout -b release/v1.0.12 develop // create release branch from local develop branch
+
+$ git push origin release/v1.0.12 // push this release branch to remote for tracking -- deploy this branch for testing. 
+
+$ git commit -m "Commit the version v1.0.12 // committing all bug fixes and make it ready for production ready. 
+
+
+```
+
+#### Create tag for release
+
+The code is now ready for production release. Hence, perform below:
+
+1. Merge the release branch with Master and develop branch. 
+2. Tag the master branch for release point.
+3. Delete the release branch.
+
+```sh
+
+$ git checkout master
+
+$ git pull origin master // just to make sure the master branch is up-to-date
+
+$ git merge --no-ff release/v1.0.12 // merge the release branch with master branch locally
+
+$ git push origin master // push the changes to remote master
+
+$ git checkout develop
+
+$ git merge --no-ff release/v1.0.12  // to merge the release branch with develop branch locally
+
+$ git push origin develop  // push the change to remote develop branch -- so that other developer can push the latest code
+
+$ git checkout master  // switch to master branch to tag 
+
+$ git tag -a v1.0.12 -m "enterprise version v1.0.12 ready"
+
+$ git push origin v1.0.12  // push the tag to remote/server
+
+$ git branch -d release/v1.0.12  // delete the branch locally
+
+$ git push origin --delete release/v1.0.12  // delete the remote release branch 
+
+```
+
+Done. Enjoy Git :) 
+
+
 
 
     
