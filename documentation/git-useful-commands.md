@@ -56,4 +56,25 @@
 12. git reset --hard *< commit number >*
 
     * To rever the repository back to commit mentioned.
+    
+13. rm .git/index.lock
+
+    * Above command can be used to fix below issue, which occurs while merging. 
+    
+    ```sh 
+    
+    fatal: Unable to create '/path/to/repo/.git/index.lock': File exists.
+
+    If no other git process is currently running, this probably means a
+    git process crashed in this repository earlier. Make sure no other git
+    process is running and remove the file manually to continue.
+    ```
+    
+14. git clean  -d  -fx
+
+    * To delete untracked files
+    
+15. git rm --cached -r [folder/file name]
+
+    * To clean tracked file mentioned in .gitignore file 
 
