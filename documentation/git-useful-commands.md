@@ -48,4 +48,12 @@
 10. git push origin --delete {the_remote_branch}
 
     * To remove remote branch from your server.
+    
+11. git merge --abort 
+
+    * To backout of the merge
+    
+12. git reset --hard *< commit number >*
+
+    * To rever the repository back to commit mentioned.
 
