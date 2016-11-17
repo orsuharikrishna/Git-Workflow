@@ -77,4 +77,17 @@
 15. git rm --cached -r [folder/file name]
 
     * To clean tracked file mentioned in .gitignore file 
+    
+16. Use below commands to squeeze all intermediate commit to single commit along with message while merging it with actual branch (not feature or bug branch)
+
+    ```sh
+    git checkout develop
+    
+    git merge --squash feature/f10293-data-grid-css // This command will merge all the changes
+    
+    git add . // Stage all the files merged from feature branch
+    
+    git commit -m "Give meaningful commit message"
+     
+    ```
 
